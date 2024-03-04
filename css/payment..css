@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: rgb(0, 0, 0);
+}
+nav{
+    background: rgba(165, 50, 50, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    backdrop-filter: blur(25px);
+    position: relative
+    width: 100%;
+    height: 100px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 12px 0;
+	background: radial-gradient(circle at -8.9% 51.2%, rgb(16, 16, 16) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(255, 255, 255) 66%);
+}
+.logo h1 {
+    font-size: 32px;
+    color: #000;
+}
+.navigation {
+    display: flex;
+    gap: 0.1rem;
+}
+.navigation li {
+    list-style: none;
+    
+}
+.navigation li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 99px;
+    transition: 150ms;
+    color: white;
+}
+.navigation li a:hover {
+    background: #007dfc;
+}
+input[type="checkbox"].nav {
+    display: none;
+}
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 952px){
+    .navigation{
+        position: absolute;
+        top: 100px;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background: rgba(0, 0, 0, 0.65);
+        width: 100%;
+        right: 0;
+        padding: 0px 0px;
+        height: 0;
+        overflow: hidden;
+        transition: 500ms;
+    }
+    input:checked ~ .navigation {
+        height: 100vh;
+        padding: 50px 0px;
+    }
+    .menu {
+        display: block;
+        width: 60px;
+    }
+    .menu label {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+    }
+
+    input:checked ~ .menu .line-icon {
+        display: none;
+
+    }
+
+    .x-icon {
+        display: none;
+    }
+    input:checked ~ .menu .line-icon {
+        display: none;
+    }
+    input:checked ~ .menu .x-icon {
+        display: block;
+    }
+}
+
+/*main one start from here*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: url(lofi.jpg) no-repeat bottom / cover;
+  }
+  
+  .container form {
+    width: 600px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .container form .row .col {
+    flex: 1 1 250px;
+  }
+  
+  .col .title {
+    font-size: 20px;
+    color: hsl(11, 85%, 65%);
+    padding-bottom: 2px;
+  }
+  
+  .col .inputBox {
+    margin: 15px 0;
+  }
+  
+  .col .inputBox label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .col .inputBox input,
+  .col .inputBox select {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  
+  .col .inputBox input:focus,
+  .col .inputBox select:focus {
+    border: 1px solid #000;
+  }
+  
+  .col .flex {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .col .flex .inputBox {
+    flex: 1 1;
+    margin-top: 5px;
+  }
+  
+  .col .inputBox img {
+    height: 140px;
+    width: 70%;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  
+  .container form .submit_btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background-color: hsl(162, 57%, 50%);
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+  
+  .container form .submit_btn:hover {
+    background-color: hsl(241, 71%, 50%);
+  }
+  
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    display: none;
+  }
+
+ 
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit_btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit_btn:hover {
+    background-color: #0056b3;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+.amount input[type=number]{
+        width: 70%;
+        height: 45px;
+        font-size: 18px;
+        font-weight: 18px
+        ;
+    }
+
+    

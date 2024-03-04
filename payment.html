@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/payment..css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/kstu.png" alt="Logo">
+                <h1>KsTU</h1>
+            </div>
+            <input type="checkbox" id="checkbox">
+            <div class="menu">
+                <label for="checkbox"></label>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="line-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="x-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+            </div>
+            <ul class="navigation">
+                <li class="active"><a href="index.html"><i class="icon-heart"></i>Home</a></li>
+                <li><a href="about.html"><i class="icon-cogs"></i>About</a></li>
+				<li><a href="registration.html"><i class="icon-th"></i>Registration</a>
+                <li><a href="payment.html"><i class="icon-th"></i>Payment</a></li>
+				<li><a href="faculty.html"><i class="icon-th"></i>Faculty</a></li>
+				<li><a href="admissions.html"><i class="icon-th"></i>Admissions</a></li>
+                
+                <li><a href="contact.html"><i class="icon-envelope"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container"> 
+  
+        <form action="#"> 
+  
+            <div class="row"> 
+  
+                <div class="col"> 
+                    <h3 class="title"> 
+                    PERSONAL INFO: 
+                    </h3> 
+                    <div class="flex"> 
+  
+                        <div class="inputBox"> 
+                            <label for="Fname"> 
+                                  First Name: 
+                              </label> 
+                            <input type="text" id="name" 
+                                   placeholder="Enter your First name" 
+                                   required> 
+                        </div> 
+                        
+                        <div class="inputBox"> 
+                            <label for="lname"> 
+                                  Last Name: 
+                              </label> 
+                            <input type="text" id="name" 
+                                   placeholder="Enter your Last name" 
+                                   required> 
+                        </div> 
+                    </div>  
+                    <div class="inputBox">
+                        <label for="phone">Student ID:</label>
+                        <input type="tel" id="Student Id" placeholder="Enter student ID" required>
+                    </div>
+                    <div class="inputBox"> 
+                        <label for="email"> 
+                              Email/Phone Number: 
+                          </label> 
+                        <input type="text" id="email/Phonenumber" 
+                               placeholder="Enter email address/Phonenumber" 
+                               required> 
+                    </div> 
+  
+                    <div class="form-group Faculty">
+                        <label for="faculty">Faculty</label>
+                        <select id="faculty">
+                          <option value="" selected disabled>Select your Faculty</option>
+                          <option value="BUSINESS SCHOOL">SCHOLL OF BUSINESS</option>
+                          <option value="FAST">APPLIED SCIENCE AND TECHNOLOGY</option>
+                          <option value="FBNE">FACULTY OF BUILT AND NATURAL ENVIRONMENT</option>
+                          <option value="FCAT">FACULTY OF CREATIVE AND TECHNOLOGY</option>
+                          <option value="FEAT">FACULTY OF ENGINEERING AND TECHNOLOGY</option>
+                          <option value="FEED">FACULTY OF ENTERPRENUERSHIP AND ENTERTAINMENT DEVELOPMENT </option>
+                          <option value="FHS">FACULTY OF HEALTH SCIENCE</option>
+                          <option value="GS">Graduate School</option>
+                        </select>
+                      </div>
+  
+                    <div class="inputBox"> 
+                        <label for="Departments"> 
+                              Departments: 
+                          </label> 
+                        <input type="text" id="Departments" 
+                               placeholder="Enter Your Departments" 
+                               required> 
+                    </div> 
+                    <div class="inputBox"> 
+                        <label for="Programme"> Programme: </label> <input type="text" id="Programme" 
+                               placeholder="Enter Programme Offered"required> 
+                    </div>
+                    
+                    <div class="form-group Level">
+                        <label for="level">Level:</label>
+                        <select id="level">
+                          <option value="" selected disabled>Choose Your Level</option>
+                          <option value="100">Level 100</option>
+                          <option value="200">Level 200</option>
+                          <option value="300">Level 300</option>
+                          <option value="400">Level 400</option>
+                         </select>
+                      </div>
+                </div> 
+                <div class="col"> 
+                    <h3 class="title">PAYMENT</h3> 
+  
+                    <div class="inputBox"> 
+                        <label for="name"> 
+                              Card Accepted: 
+                          </label> 
+                        <img src="img/pay_card.jpg" 
+                             alt="credit/debit card image">    
+                    </div>
+                    <div class="inputBox"> 
+                        <label for="name"> 
+                              MOMO TRANSACTION: 
+                          </label> 
+                        <img src="img/momo.jpg" 
+                             alt="credit/debit card image">    
+                    </div> 
+  
+                    <div class="inputBox"> 
+                        <label for="cardName"> 
+                              Name On Card: 
+                          </label> 
+                        <input type="text" id="cardName" 
+                               placeholder="Enter card name" 
+                               required> 
+                    </div> 
+  
+                    <div class="inputBox"> 
+                        <label for="cardNum"> 
+                              Credit Card Number: 
+                          </label> 
+                        <input type="text" id="cardNum" 
+                               placeholder="1111-2222-3333-4444" 
+                               maxlength="19" required> 
+                    </div> 
+  
+                    <div class="inputBox"> 
+                        <label for="">Exp Month:</label> 
+                        <select name="" id=""> 
+                            <option value="">Choose month</option> 
+                            <option value="January">January</option> 
+                            <option value="February">February</option> 
+                            <option value="March">March</option> 
+                            <option value="April">April</option> 
+                            <option value="May">May</option> 
+                            <option value="June">June</option> 
+                            <option value="July">July</option> 
+                            <option value="August">August</option> 
+                            <option value="September">September</option> 
+                            <option value="October">October</option> 
+                            <option value="November">November</option> 
+                            <option value="December">December</option> 
+                        </select> 
+                    </div> 
+  
+  
+                    <div class="flex"> 
+                        <div class="inputBox"> 
+                            <label for="">Exp Year:</label> 
+                            <select name="" id=""> 
+                                <option value="">Choose Year</option>
+                                <option value="2027">2020</option>
+                                <option value="2027">2021</option>
+                                <option value="2027">2022</option> 
+                                <option value="2023">2023</option> 
+                                <option value="2024">2024</option> 
+                                <option value="2025">2025</option> 
+                                <option value="2026">2026</option> 
+                                <option value="2027">2027</option> 
+                                <option value="2027">2028</option>
+                                <option value="2027">2029</option>
+                                <option value="2027">2030</option>
+                            </select> 
+                        </div> 
+  
+                        <div class="inputBox"> 
+                            <label for="cvv">CVV</label> 
+                            <input type="number" id="cvv" 
+                                   placeholder="1234" required> 
+                        </div> 
+                    </div> 
+                    <div class="amount">
+                        <input type="number" placeholder="Enter Amount To Be Paid" required class="numbers">
+                        <i class="fa fa-money icon" aria-hidden="true"></i>
+                    </div>
+  
+                </div> 
+  
+            </div> 
+  
+            <input type="submit" value="Proceed Payment" 
+                   class="submit_btn"> 
+        </form> 
+  
+    </div> 
+</section>
+<!-- <footer>
+</section>
+<hr>
+<footer class="bg-dark-1">
+<h6 class="m-0 mt-4 text-center text-white text-capitalize">Copyright &copy; 2024 designed by Daniel osei kyem</h6>
+
+</section>
+</footer> -->
+</body>
+</html>
